@@ -141,6 +141,7 @@ const watchFile = () =>{
     });
     watch('./src/scss/**/*.scss', styles);
     watch('./src/index.html', Include);
+    watch('./src/**/*.html', Include);
     watch('./src/img/**.jpg', ImageToApp);
     watch('./src/img/**.png', ImageToApp);
     watch('./src/img/**.jpeg', ImageToApp);
@@ -154,7 +155,8 @@ const watchFile = () =>{
 
 
 
-exports.default = series( parallel( Include, fonts, ImageToApp, scripts, svgSprite, resourceTo ),fontsStyle, styles ,watchFile)
+exports.default = series( parallel( Include, fonts, ImageToApp, scripts, svgSprite, resourceTo ), styles ,watchFile)
+exports.fontsStyle
 
 const scriptsBuild = () =>{
     return src('./src/js/main.js')
