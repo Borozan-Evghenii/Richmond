@@ -1,0 +1,44 @@
+button{
+    font-family: 'Medium', sans-serif;
+    line-height: 100%;
+    color: $white;
+    background-color: $semidark;
+    padding: 19px 32px;
+    border: 1px solid $dark;
+
+    &:hover{
+        background-color: transparent;
+        cursor: pointer;
+        color: $dark;
+        transition: all .3s;
+    }
+}
+
+.nav-item{
+    color: $dark;
+    position: relative;
+    font-weight: inherit;
+    &::before{
+      content:"";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -5px;
+      height: 2px;
+      width: 0;
+      background-color: $dark;
+      transition: width 0.25s;
+    }
+    &:hover{
+      &::before{
+        width: 100%;
+        transition: width 0.25s;
+      }
+    }
+    &--active{
+      &::before{
+        width: 100%;
+        transition: width 0.25s;
+      }
+    }
+  }

@@ -1,0 +1,34 @@
+body{
+    font-family: 'Regular', sans-serif;
+    font-size: $size;
+    line-height: 150%;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1230px;
+}
+
+
+h1{
+    font-family: 'Semibold' ,sans-serif;
+    font-size: 46px;
+
+}
+h2{
+    font-family: 'Regular' ,sans-serif;
+    font-size: 46px;
+}
+h3{
+    font-family: 'Medium' ,sans-serif;
+    font-size: 41px;
+}
+h4{
+    font-family: 'Medium' ,sans-serif;
+    font-size: 30px;
+}
+h5{
+    font-family: 'Semibold' ,sans-serif;
+    font-size: 29px;
+}
