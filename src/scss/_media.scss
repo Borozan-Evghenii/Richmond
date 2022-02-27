@@ -1,0 +1,53 @@
+@include tablet{
+
+   .header-navigation{
+
+        .header-burger{
+            display: block; 
+        } 
+        .nav{
+            display: flex;
+            position: absolute;
+            left: 0;
+            top: var(--header-height);
+            background-color: $white;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 10px 20px;
+            width: fill-available;
+            transform: translateY(-100%);
+            transition: transform 0.3s;
+            z-index: -1;
+            .nav-item{
+                margin-bottom: 40px;
+                font-size: 24px;
+               
+            }
+            
+        }
+        .nav--visible{
+            transform: none;
+
+        }
+   }
+   
+
+}
+@include mobile-landscape{
+    .header-action{
+        &__phone{
+            margin: 0;
+        }
+        &__button{
+            display: none;
+        }
+    }
+}
+
+@include mobile{
+    .header-action{
+        &__phone{
+            display: none;
+        }
+    }
+}

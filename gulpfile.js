@@ -155,7 +155,7 @@ const watchFile = () =>{
 
 
 
-exports.default = series( parallel( Include, fonts, ImageToApp, scripts, svgSprite, resourceTo ), styles ,watchFile)
+exports.default = series( parallel( Include, fonts, ImageToApp, scripts  ), styles ,watchFile)
 exports.fontsStyle
 
 const scriptsBuild = () =>{

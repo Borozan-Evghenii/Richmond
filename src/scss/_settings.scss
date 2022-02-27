@@ -1,3 +1,4 @@
+
 body{
     font-family: 'Regular', sans-serif;
     font-size: $size;
@@ -14,12 +15,13 @@ body{
     padding: 0 15px;
     max-width: 1200px;
 }
-
+.wrapper{
+    overflow-x: hidden;
+}
 
 h1{
     font-family: 'Semibold' ,sans-serif;
     font-size: 46px;
-
 }
 h2{
     font-family: 'Regular' ,sans-serif;
