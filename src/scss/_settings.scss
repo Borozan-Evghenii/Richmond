@@ -9,14 +9,16 @@ body{
     }
     
 }
-
+.section{
+    margin-top: 200px;
+}
 .container{
     margin: 0 auto;
     padding: 0 15px;
     max-width: 1200px;
 }
 .wrapper{
-    overflow-x: hidden;
+    position: relative;
 }
 
 h1{

@@ -1,6 +1,8 @@
 .header{
     padding: 40px 0;
     background-color: $white;
+    position: relative;
+    z-index: 99;
     &-container{
         display: flex;
         justify-content: space-between;

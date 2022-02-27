@@ -1,36 +1,56 @@
+@include min-tablet{
+    .nav{
+        display: none;
+    }
+}
 @include tablet{
 
-   .header-navigation{
+    .about-container{
+        grid-template-columns: auto;
+    }
 
-        .header-burger{
-            display: block; 
-        } 
-        .nav{
-            display: flex;
-            position: absolute;
-            left: 0;
-            top: var(--header-height);
-            background-color: $white;
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 10px 20px;
-            width: fill-available;
-            transform: translateY(-100%);
-            transition: transform 0.3s;
-            z-index: -1;
-            .nav-item{
-                margin-bottom: 40px;
-                font-size: 24px;
-               
-            }
+
+    .navigation{
+        display: none;
+    }
+    .header{
+        position: fixed;
+        left: 0;
+        width: 100%;
+        z-index: 3;
+    }
+
+    .header-burger{
+        display: block; 
+    } 
+    .nav{
+        display: flex;
+        position: fixed;
+        left: 0;
+        z-index: 0;
+        top: var(--header-height);
+        background-color: $white;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+        width: fill-available;
+        transform: translateY(-100%);
+        transition: transform 0.3s;
+        
+        .nav-item{
+            margin-bottom: 40px;
+            font-size: 24px;
             
         }
-        .nav--visible{
-            transform: none;
-
-        }
-   }
+        
+    }
+    .nav--visible{
+        transform: none;
+    }
    
+
+
+
 
 }
 @include mobile-landscape{
