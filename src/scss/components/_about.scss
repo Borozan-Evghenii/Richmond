@@ -10,10 +10,7 @@
         max-width: 465px;
     }
     &-content{
-        &__delimited{
-            display: block;
-            margin-bottom: 40px;
-        }
+        
         &__number{
             display: flex;
             margin-top: 100px;
@@ -41,4 +38,9 @@
             }
         }
     }
+}
+
+.content__delimited{
+    display: block;
+    margin-bottom: 40px;
 }

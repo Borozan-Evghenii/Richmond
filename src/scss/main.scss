@@ -6,11 +6,14 @@
 @import "globalcomponents";
 @import "../../node_modules/normalize.css/normalize.css";
 @import "../../node_modules/reset.css/reset.css";
+@import "../../node_modules/swiper/swiper-bundle.css";
 
 
 @import "./components/header";
 @import "./components/hero";
 @import "./components/about";
+@import "./components/location";
+@import "./components/style";
 
 
 

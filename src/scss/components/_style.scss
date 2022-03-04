@@ -1,0 +1,21 @@
+.style{
+    &-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-content{
+        &__text{
+            max-width: 550px;  
+            margin-top: 50px;
+        }
+        
+    }
+    &-img{
+        img{
+            width: 570px;
+            height: 500px; 
+        }
+        
+    }
+}

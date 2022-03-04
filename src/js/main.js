@@ -1,3 +1,7 @@
+import Swiper from "swiper";
+
+
+
 
 const burger = document?.querySelector('[data-burger]');
 const nav = document?.querySelector('[data-nav]');
@@ -6,6 +10,11 @@ const navItem = document?.querySelectorAll('.nav-item');
 const body = document?.body;
 const headerHeight = header.offsetHeight;
 console.log(headerHeight);
+
+
+
+
+
 
 document.querySelector('html').style.setProperty('--header-height',headerHeight +'px');
 
