@@ -1,6 +1,3 @@
-import Swiper from "swiper";
-
-
 
 
 const burger = document?.querySelector('[data-burger]');
@@ -36,3 +33,43 @@ navItem.forEach(el => {
         nav.classList.remove('nav--visible');
     })
 })
+
+import Swiper, { Navigation, Pagination } from 'swiper';
+Swiper.use([Navigation, Pagination]);
+
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    slidesPerView: 'auto',
+    spaceBetween: 50,
+    loop: true,
+    centeredSlides: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    
+  });
+const featuresSwiper = new Swiper('.features-swiper', {
+    // Optional parameters
+    slidesPerView: 'auto',
+    spaceBetween: 50,
+    loop: true,
+    centeredSlides: true,
+    wrapperClass: 'features-wrapper',
+    slideClass: 'features-swiper',
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.features-button-next',
+      prevEl: '.features-button-prev',
+    },
+  
+    
+  });
