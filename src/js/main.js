@@ -58,18 +58,12 @@ const swiper = new Swiper('.swiper', {
   });
 const featuresSwiper = new Swiper('.features-swiper', {
     // Optional parameters
-    slidesPerView: 'auto',
-    spaceBetween: 50,
-    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 0,
     centeredSlides: true,
-    wrapperClass: 'features-wrapper',
-    slideClass: 'features-swiper',
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.features-button-next',
-      prevEl: '.features-button-prev',
-    },
+    loop: true,
+    wrapperClass: 'features-swiper-wrapper',
+    slideClass: 'features-slide',
   
     
   });
