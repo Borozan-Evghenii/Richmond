@@ -1,0 +1,28 @@
+.offer{
+    &-content{
+        display: flex;
+        align-items: center;
+        margin-top: 100px;
+        &_img{
+            margin-right: 60px;
+            img{
+                width: 570px;
+                height: 460px;
+            }
+        }
+        &_text{
+            &-descriptor{
+                font-size: 12px;
+                color: $semidark;
+                letter-spacing: 2%;
+            }
+            &-text{
+                max-width: 400px;
+                margin: 40px 0 50px 0 ;
+            }
+        }
+        &:nth-child(2){
+            
+        }
+    }
+}
