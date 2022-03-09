@@ -67,3 +67,19 @@ const featuresSwiper = new Swiper('.features-swiper', {
   
     
   });
+const offerSwiper = new Swiper('.offer-swiper', {
+    // Optional parameters
+    slidesPerView: 1,
+    loop: true,
+    wrapperClass: 'offer-wrapper',
+    slideClass: 'offer-slide',
+
+    navigation: {
+      nextEl: '.offer-button-next',
+      prevEl: '.offer-button-prev',
+    },
+    pagination: {
+      el: '.offer-pagination',
+    },
+    
+  });
