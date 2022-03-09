@@ -1,0 +1,78 @@
+.contact{
+    &-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 160px;
+        line-height: normal;
+    }
+
+}
+.column-left{
+    &-descr{
+        max-width: 380px;
+        margin: 20px 0  80px 0 ;
+        color: $semidark;
+    }
+    &-h3{
+        max-width: 380px;
+    }
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    input{
+        margin-bottom: 50px;
+        border: none;
+        padding: 10px 5px 10px 5px;
+        border-bottom: 1px solid $dark;
+        &:focus-visible{
+            outline: none;
+        }
+        &[type=checkbox]{
+            margin: 0;
+        }
+    }
+    .policy{
+        width: 20px;
+        height: 20px;
+    }
+
+    .private{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 50px;
+
+    }
+}
+
+.column-right-addres{
+    p{
+        margin: 50px 0 40px 0;
+        max-width: 220px;
+        line-height: normal;
+    }
+}
+
+.link{
+    text-decoration: underline;
+    color: $gray;
+}
+
+hr{
+    color: $gray;
+    background-color: $gray;
+}
+footer{
+    margin-top: 80px;
+    margin-bottom: 40px;
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        color: $semidark;
+        font-size: 16px;
+    }
+}
