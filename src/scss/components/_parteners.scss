@@ -1,0 +1,19 @@
+.parteners{
+    &-content{
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 30px;
+        column-gap: 30px;
+        &_item{
+            display: flex;
+            background-color: #F5F5F5;
+            justify-content: center;
+            align-items: center;
+            height: 230px;
+            img{
+                mix-blend-mode: darken;
+            }
+        }
+    }
+}
