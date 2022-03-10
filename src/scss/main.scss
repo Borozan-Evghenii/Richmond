@@ -1,4 +1,5 @@
 
+//Global
 @import "mixins";
 @import "variables";
 @import "fonts";
@@ -8,7 +9,7 @@
 @import "../../node_modules/reset.css/reset.css";
 @import "../../node_modules/swiper/swiper-bundle.css";
 
-
+//Components
 @import "./components/header";
 @import "./components/hero";
 @import "./components/about";
@@ -22,7 +23,8 @@
 @import "./components/contact";
 
 
-
-
-
-@import "media";
+// Media Querry
+@import "./media/laptoplarge";
+@import "./media/laptop";
+@import "./media/tablet";
+@import "./media/mobile";
