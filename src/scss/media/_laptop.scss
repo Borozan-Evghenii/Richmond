@@ -1,3 +1,31 @@
 @include laptop{
-    
+    nav{
+        display: none;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        transform: translateY(-100%);
+        background-color: $white;
+        z-index: 98;
+        width: 100%;
+        transition: transform .5s ease-in-out;
+        &-item{
+            font-size: 24px;
+            padding: 20px 15px ;
+            
+        }
+        &--visible{
+            transform: translateY(-0.2%);
+        }
+    }
+    .header-burger{
+        display: block;
+    }
+
+
+    .hero-section__bg-wrap{
+        margin: 0;
+    }
 }

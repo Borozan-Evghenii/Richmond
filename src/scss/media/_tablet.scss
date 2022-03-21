@@ -1,3 +1,10 @@
 @include tablet{
-    
+    .header-action{
+        &__phone{
+            margin: 0;
+        }
+        &__button{
+            display: none;
+        }
+    }
 }

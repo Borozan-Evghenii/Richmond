@@ -39,10 +39,10 @@
 	@media (max-width: 425px) { @content; }
 }
 @mixin tablet {
- 	@media (min-width: 426px) and (max-width: 768px ) { @content; }
+ 	@media (max-width: 768px ) { @content; }
 }
 @mixin laptop {
- 	@media (min-width: 769px) and (max-width: 1024px ) { @content; }
+ 	@media (max-width: 1024px ) { @content; }
 }
 @mixin laptop-large {
  	@media (min-width: 1025px) { @content; }

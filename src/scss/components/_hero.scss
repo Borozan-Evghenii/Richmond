@@ -1,6 +1,7 @@
 .hero{
     &-section{
         position: relative;
+        overflow: hidden;
         &__container{
             height: 100vh;
         }
@@ -33,6 +34,7 @@
         z-index: -2;
         left: 0;
         top: 0;
+        width: 100%;
         margin-left: 3%;
         overflow: hidden;
         
