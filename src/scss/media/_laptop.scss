@@ -28,4 +28,28 @@
     .hero-section__bg-wrap{
         margin: 0;
     }
+    .about-content__number{
+        
+        .description{
+            line-height: 1;
+        }
+     }
+     .location-map__nav-item{
+        font-size: 18px;
+    }
+    .style{
+        &-content{
+            &__text{
+              
+            }
+            
+        }
+        &-img{
+            img{
+                width: 480px;
+                height: 500px; 
+            }
+            
+        }
+    }
 }

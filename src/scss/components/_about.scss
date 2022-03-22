@@ -12,10 +12,10 @@
     &-content{
         
         &__number{
-            display: flex;
+            display: grid;
             margin-top: 100px;
-            justify-content: space-between;
-            align-content: stretch;
+            grid-template-columns: repeat(4, 1fr);
+            
             .number{
                 display: flex;
                 font-family: 'Regular', sans-serif;
@@ -28,6 +28,7 @@
                     font-size: 18px;
                     color: $semidark;
                     padding-left: 5px;
+                    line-height: 1.5;
                 
                 }
             }

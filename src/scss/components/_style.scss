@@ -1,8 +1,9 @@
 .style{
     &-container{
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         align-items: center;
+        gap: 50px;
     }
     &-content{
         &__text{
@@ -13,6 +14,7 @@
     }
     &-img{
         img{
+            object-fit: cover;
             width: 570px;
             height: 500px; 
         }
