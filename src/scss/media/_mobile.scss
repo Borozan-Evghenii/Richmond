@@ -53,5 +53,21 @@
             
         }
      }
+     .params-content{
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+    }
+    .parteners-content{
+        grid-template-columns: 1fr;
+    }
+    form{
+        .private{
+            flex-wrap: wrap;
+            .link{
+                
+            }
+        } 
+      }
+    
 
 }

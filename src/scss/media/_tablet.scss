@@ -56,5 +56,43 @@
             
         }
     }
-
+    .offer-content{
+        display: grid !important;
+        grid-template-columns: auto;
+        &:nth-child(odd){
+            .offer-content_img{
+                margin-right: 0;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .offer-content_img{
+        margin: 0;
+        img{
+            width: 100%;
+        }
+    }
+    .offer-swiper{
+        height: 350px;
+    }
+    .params-content{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 80px;
+    }
+    .parteners-content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-content{
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+    }
+    form{
+      .private{
+          .link{
+              font-size: 14px;
+          }
+      } 
+    }
 }

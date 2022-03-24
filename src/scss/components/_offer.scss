@@ -1,8 +1,10 @@
 .offer{
     &-content{
-        display: flex;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         margin-top: 100px;
+        align-items: center;
+        gap: 50px;
         &_img{
             margin-right: 60px;
             img{
@@ -23,8 +25,8 @@
             }
         }
         &:nth-child(odd){
-            justify-content: space-between;
-            flex-direction: row-reverse;
+            display: flex;
+            flex-flow: row-reverse;
             .offer-content_img{
                 margin-right: 0;
             }

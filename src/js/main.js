@@ -64,6 +64,14 @@ const featuresSwiper = new Swiper('.features-swiper', {
     loop: true,
     wrapperClass: 'features-swiper-wrapper',
     slideClass: 'features-slide',
+    breakpoints:{
+      320:{
+        slidesPerView: 1,
+      },
+      1024:{
+        slidesPerView: 2,
+      }
+    },
   
     
   });
